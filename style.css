@@ -1,15 +1,131 @@
-body > iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
-
-body {
-    width: 100%;
-    height: 100%;
-}
-
 html {
     height: 100%;
     width: 100%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #fefefe;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header h1 {
+    color: #8B4513;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.announcement {
+    margin-bottom: 3rem;
+    line-height: 1.7;
+}
+
+.announcement h2 {
+    color: #8B4513;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.announcement p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.announcement a {
+    color: #8B4513;
+    text-decoration: none;
+}
+
+.announcement a:hover {
+    text-decoration: underline;
+}
+
+.mills-list {
+    border-top: 2px solid #e0e0e0;
+    padding-top: 2rem;
+}
+
+.mills-list h2 {
+    color: #8B4513;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.mills-list > p {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+.mills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.mill {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #8B4513;
+    transition: box-shadow 0.2s ease;
+}
+
+.mill:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.mill h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.mill h3 a {
+    color: #8B4513;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.mill h3 a:hover {
+    text-decoration: underline;
+}
+
+.mill p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    .mills {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .mill {
+        padding: 1rem;
+    }
 }
